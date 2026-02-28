@@ -78,37 +78,18 @@ const Hero = () => {
           </a>
         </motion.div>
 
-        {/* Floating abstract element */}
+        {/* Abstract AI visual */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
           className="mt-16 relative"
         >
-          <div className="mx-auto w-full max-w-2xl h-[200px] rounded-2xl glass glow-box overflow-hidden relative animate-float">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5" />
-            <div className="p-6 relative z-10">
-              <div className="flex gap-2 mb-4">
-                <div className="w-2.5 h-2.5 rounded-full bg-destructive/60" />
-                <div className="w-2.5 h-2.5 rounded-full bg-accent/60" />
-                <div className="w-2.5 h-2.5 rounded-full bg-primary/60" />
-              </div>
-              <div className="space-y-3">
-                <div className="flex gap-3">
-                  <div className="h-2 w-16 rounded bg-primary/20 shimmer" />
-                  <div className="h-2 w-32 rounded bg-muted-foreground/10" />
-                </div>
-                <div className="flex gap-3">
-                  <div className="h-2 w-24 rounded bg-accent/15" />
-                  <div className="h-2 w-20 rounded bg-primary/10 shimmer" style={{ animationDelay: "0.5s" }} />
-                </div>
-                <div className="flex gap-3 mt-6">
-                  <div className="h-8 w-20 rounded-md bg-primary/10 border border-primary/20" />
-                  <div className="h-8 w-28 rounded-md bg-accent/10 border border-accent/20" />
-                  <div className="h-8 flex-1 rounded-md bg-muted/50" />
-                </div>
-              </div>
-            </div>
+          <div className="mx-auto w-full max-w-2xl h-[160px] rounded-2xl overflow-hidden relative animate-float">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/15 via-accent/10 to-primary/15 blur-[2px]" />
+            <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full bg-primary/10 blur-[60px]" />
+            <div className="absolute top-1/3 right-1/4 w-24 h-24 rounded-full bg-accent/10 blur-[40px]" />
           </div>
         </motion.div>
       </div>
