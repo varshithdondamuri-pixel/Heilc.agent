@@ -28,7 +28,7 @@ const CTASection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-primary text-primary-foreground font-medium btn-glow shimmer transition-all duration-300 hover:scale-[1.02]"
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-primary text-primary-foreground font-semibold btn-glow shimmer transition-all duration-300 hover:scale-[1.02] hover:brightness-110"
             >
               Launch Your AI Website
             </a>
@@ -36,7 +36,7 @@ const CTASection = () => {
               href="https://wa.me/918309324612"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg border border-border text-foreground font-medium hover:bg-secondary transition-all duration-300"
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg border border-border text-foreground font-semibold hover:bg-secondary hover:border-primary/30 transition-all duration-300"
             >
               Book Free Strategy Call
             </a>

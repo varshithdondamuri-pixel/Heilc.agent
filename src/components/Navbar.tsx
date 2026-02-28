@@ -1,5 +1,6 @@
 import { motion, useScroll, useSpring } from "framer-motion";
 import { useState, useEffect } from "react";
+import heilcLogo from "@/assets/heilc-logo.png";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -34,11 +35,16 @@ const Navbar = () => {
         }`}
       >
         <div className="container max-w-6xl mx-auto flex items-center justify-between px-6">
-          <a href="#" className="group flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center group-hover:bg-primary/30 transition-all duration-300 group-hover:shadow-[0_0_20px_hsl(var(--primary)/0.3)]">
-              <span className="font-display font-bold text-primary text-sm">H</span>
+          <a href="#" className="group flex items-center gap-3">
+            <div className="relative w-10 h-10 flex items-center justify-center">
+              <div className="absolute inset-0 rounded-lg bg-primary/15 blur-md group-hover:bg-primary/25 transition-all duration-500" />
+              <img
+                src={heilcLogo}
+                alt="HEILC Logo"
+                className="relative w-10 h-10 rounded-lg object-contain brightness-150 contrast-125 drop-shadow-[0_0_8px_hsl(215_100%_65%/0.4)] group-hover:drop-shadow-[0_0_16px_hsl(215_100%_65%/0.6)] transition-all duration-500"
+              />
             </div>
-            <span className="font-display font-bold text-lg text-foreground tracking-tight">
+            <span className="font-display font-bold text-xl text-foreground tracking-tight drop-shadow-[0_0_10px_hsl(215_100%_65%/0.3)]">
               HEILC
             </span>
           </a>
@@ -55,7 +61,7 @@ const Navbar = () => {
             ))}
             <a
               href="#contact"
-              className="text-sm font-medium bg-primary text-primary-foreground px-5 py-2 rounded-lg btn-glow transition-all duration-300"
+              className="text-sm font-semibold bg-primary text-primary-foreground px-5 py-2.5 rounded-lg btn-glow transition-all duration-300 hover:brightness-110"
             >
               Start Project
             </a>
